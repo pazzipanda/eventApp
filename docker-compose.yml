@@ -1,0 +1,16 @@
+db:
+  image: mongo
+  ports:
+    - "27017:27017"
+  restart: always
+
+web:
+  build: .
+  command: npm start
+  ports:
+    - "3000:3000"
+  volumes:
+    - .:/app
+  links:
+    - db
+  tty: true

@@ -1,0 +1,3 @@
+Command "daemon" is deprecated, and will be removed in Docker 17.12. Please run `dockerd` directly.
+time="2017-06-21T03:49:04.300397851+02:00" level=warning msg="[!] DON'T BIND ON ANY IP ADDRESS WITHOUT setting --tlsverify IF YOU DON'T KNOW WHAT YOU'RE DOING [!]" 
+can't create unix socket var/run/docker.sock: listen unix var/run/docker.sock: bind: no such file or directory
